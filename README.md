@@ -2,13 +2,7 @@
 
 Transfer learning focuses on storing knowledge gained while solving one problem and applying it to another similar kind of problem. The same approach we used here with the OID Dataset with the pre-trained model of SSD MObileNet.
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-NOTE- Before we start, I would like to tell you that the code is available as a google drive link due to ambiguity while uplaoding file size more than 25MB. For that, please visit the workspace folder! Also, you may have conflict while using Tensorflow version 2.0. So it is advisable to downgrade before using the repository.
-
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-##  Phases in the process are-
+##  Phases in the process-
 
 ### 1. Data Collection
 
@@ -22,8 +16,6 @@ NOTE- Before we start, I would like to tell you that the code is available as a 
 - These raw-images arec onverted into hybrid images manually for better classification purpose.
 - In data cleaning, labeling of image is done as well with help of LabelImg tool.
 - In the pre-porcessing stage the bounding box are converted into its values in the excel file where missing value and NaN value are treated by calculating the average of the     respective columns.
-
-NOTE- LabelImg is freely available on github. Click on the link https://github.com/tzutalin/labelImg to have a look on the LabelImg.
 
 ###  3. Model Analysis
 
@@ -47,24 +39,22 @@ NOTE- LabelImg is freely available on github. Click on the link https://github.c
 - GUI is developed on tkinter library of python.
 - GUI has separate panels for the selection of inout file and dispaly of output file as shown below.
 
-<img src="https://github.com/pranjalsharma26/Crop-Classification-Software/blob/main/Output/output_panel.JPG"/>
-
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Data Information
 
-Data is splitted into train, test and valid directoreis and sample of annotation and data is available in those directories.
+Data is splitted into train, test and valid directories and sample of annotation and data is available in those directories.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Process to start the workflow
 
 ### 1. Conversion
 
-<img src="https://github.com/pranjalsharma26/Crop-Classification-Software/blob/main/Readme_Images/workflow.JPG"/>
+<img src="https://github.com/eddychn/Crop-Classification-Software/blob/main/Readme_Images/workflow.JPG"/>
 
 ### 2. Annotation
 
-<img src="https://github.com/pranjalsharma26/Crop-Classification-Software/blob/main/Readme_Images/annotatio_view.JPG"/>
+<img src="https://github.com/eddychn/Crop-Classification-Software/blob/main/Readme_Images/annotatio_view.JPG"/>
 
 ### 3. Training
 

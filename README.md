@@ -46,26 +46,3 @@ Transfer learning focuses on storing knowledge gained while solving one problem 
 Data is splitted into train, test and valid directories and sample of annotation and data is available in those directories.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Process to start the workflow
-
-### 1. Conversion
-
-<img src="https://github.com/eddychn/Crop-Classification-Software/blob/main/Readme_Images/workflow.JPG"/>
-
-### 2. Annotation
-
-<img src="https://github.com/eddychn/Crop-Classification-Software/blob/main/Readme_Images/annotatio_view.JPG"/>
-
-### 3. Training
-
-- Training is the crucial stage where you need to tun the scripts in the training_demo folder.
-
-##### Below are the few things to consider before you start training
-
-- The simple error of starting the training from the zeroth step. That is strictly not allowed when it comes to Tensorflow 2.0 and its lesser version. So we changed it to the step at which the training was left on the parent model.
-
-- While training it may happen that the tensorflow crashes because of either memory error or after each epoch it may give a warning that it increased the memory usage by 10%. That needs to be taken in consideration. If the warning occurs, stop the training immediately and decrease the batch size, or use the SGD for better efficiency.
-
-- While using transfer learning, while resuming the training from the last trained step, do remember to have a fine-tune-checkpoint and detect-checkpoint variables defined, before starting the training steps.
-
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
